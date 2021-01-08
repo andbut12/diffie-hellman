@@ -7,3 +7,7 @@
 - exec `source venv/bin/activate`
 - exec `pip install -r requirements.txt`
 - exec `python main.py`
+
+#### How to compile program
+
+- exec `auto-py-to-exe`
