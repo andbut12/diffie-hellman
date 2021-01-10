@@ -266,7 +266,7 @@ class GUIInterface(BaseGUIInterface):
 
         passwords_text = get_reg("passwords")
         self.passwords_scrolled_text = scrolledtext.ScrolledText(_passwords_tab, width=70, )
-        self.passwords_scrolled_text.insert(0.0, passwords_text)
+        self.passwords_scrolled_text.insert(0.0, passwords_text if passwords_text else "")
 
         clear_registry_button = Button(
             _passwords_tab, text="Очистить реестр", command=self.clear_registry_data, width=40,
